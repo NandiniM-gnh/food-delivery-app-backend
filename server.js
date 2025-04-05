@@ -15,7 +15,7 @@ mongoose.connect(process.env.MONGO_URL).then(
     (err)=>console.log(err)
 )
 
-//API landing page http://locallhost:3000
+//API landing page http://locallhost:3000/register
 app.get('/',async(req,res)=>{
     try{
         res.send("<h1 align=center>welcome to the home page</h1>")
